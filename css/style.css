@@ -18,8 +18,7 @@ main {
 
 
 .container {
-    margin-right: 80px;
-    margin-left: 80px;
+    margin: 80px 80px 0px 80px;
 }
 
 /* Header Style */
@@ -28,13 +27,77 @@ nav {
     justify-content: space-between;
 }
 
+.top-space {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+
 nav a {
     text-decoration: none;
-    color: black;
-    font-size: 1.5em;
+    color: #3a3a3a;
+    font-size: 16;
+    font-weight: 600;
     margin-right: 15px;
 }
 
-.top-space {
-    margin: 0;
+
+/* Influencer Journey Section Style */
+.influencer-journey-section {
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.half-width {
+    width: 50%;
+}
+
+.influencer-title {
+    font-size: 52px;
+    color: #3a3a3a;
+    line-height: 40px;
+
+}
+
+#span-color {
+
+    color: #FF5959;
+}
+
+p {
+    font-size: 18px;
+    color: #3a3a3a;
+    text-align: justify;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+
+.half-width img {
+    width: 70%;
+    margin-left: 25%;
+
+}
+
+.button {
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: white;
+    font-weight: 500;
+    border-radius: 41px;
+
+}
+
+a .text-size {
+    font-size: 16px;
+}
+
+.space-left {
+    margin-left: 15px;
+    font-size: 12px;
 }
