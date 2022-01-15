@@ -6,14 +6,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+
 
 }
 
-main {
+/* main {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 
 
@@ -91,6 +94,11 @@ p {
     color: white;
     font-weight: 500;
     border-radius: 41px;
+    animation: sliding 2s ease-in-out 0.5s;
+}
+
+.button:hover {
+    padding: 20px 48px;
 
 }
 
@@ -102,3 +110,84 @@ a .text-size {
     margin-left: 15px;
     font-size: 12px;
 }
+
+
+/* Partner Company Section Style */
+
+.partner-company-section {
+    display: flex;
+
+}
+
+.image {}
+
+/* Product Collections Section Style */
+.product-container {
+    margin: 0% 10%;
+}
+
+.popular-section-title {
+    text-align: center;
+    font-size: 28px;
+}
+
+.product-collections {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 5%;
+}
+
+.product-collection {
+    justify-content: center;
+    align-items: center;
+    box-shadow: gray;
+    margin-left: 20px;
+}
+
+.product-collections-title {
+    font-size: 28px;
+    color: #18191F;
+    margin: 0px;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 10px;
+}
+
+.product-rate {
+    margin-bottom: 15px;
+
+}
+
+.fa-star {
+    font-size: 14px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+h6 {
+    color: #787885;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.float-right {
+    text-decoration: none;
+    float: right;
+    color: #E02C6D;
+}
+
+/* Footer Style */
