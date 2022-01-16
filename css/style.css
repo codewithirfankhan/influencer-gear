@@ -2,7 +2,11 @@
 
 <style>@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
 </style>
+
 /* Common Style or Utilies*/
+html {
+    overflow: hidden;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -10,15 +14,15 @@ body {
     padding: 0px;
 
 
+
 }
 
-main {
+/* main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-}
+} */
 
 
 
@@ -86,6 +90,8 @@ p {
 .half-width img {
     width: 70%;
     margin-left: 25%;
+    transform: rotate(380deg, 5s);
+    transition: transform infinite;
 
 }
 
@@ -120,27 +126,40 @@ a .text-size {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+
+
 
 }
 
 hr {
-    background-image: linear-gradient(rgba(158, 147, 147, 0));
+    background-image: linear-gradient(gray grey);
     width: 100%;
-    margin-left: 60px;
-    ;
+    /* margin-left: 60px; */
+
 }
 
 .image {
-    margin-left: 100px;
+    justify-content: space-between;
 }
 
 
 
 /* Product Collections Section Style */
 
-.product-container {
-    margin: 1% 10% 10% 10%;
+.product-collection-section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    flex-direction: column; */
+
+}
+
+.product-container {
+    /* margin: 1% 10% 10% 10%; */
+
 }
 
 .popular-section-title {
@@ -149,7 +168,6 @@ hr {
 }
 
 .product-collections {
-
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
     display: grid;
@@ -179,6 +197,7 @@ hr {
 }
 
 .product-rate {
+    margin-top: 15px;
     margin-bottom: 15px;
 
 }
@@ -202,6 +221,7 @@ h6 {
 }
 
 .float-right {
+    margin-top: 50px;
     text-decoration: none;
     float: right;
     color: #E02C6D;
@@ -212,27 +232,40 @@ h6 {
 /* Footer Style */
 
 footer {
-    background-color: #0B0D17;
+    background-color: #0A0826;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+
 
 
 }
 
 .white-color {
     color: #ffffff;
-    font-style: italic;
     font-size: 36px;
     line-height: 0px;
 }
 
-
-
-footer p {
-    text-align: center;
-    color: gray;
+.gray {
+    color: #D9DBE1;
     font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
+.social-icons {
+    margin-top: 10px;
+}
 
+.social-icon {
+    display: inline;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    color: #fff;
 }
