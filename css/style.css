@@ -57,9 +57,6 @@ nav a {
 .influencer-journey-section {
     display: flex;
     justify-content: space-around;
-
-
-
 }
 
 .half-width {
@@ -149,20 +146,21 @@ hr {
 /* Product Collections Section Style */
 
 .product-collection-section {
-    /* display: flex;
+    /* width: 100%; */
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    flex-direction: column; */
+    flex-direction: column;
 
 }
 
 .product-container {
-    /* margin: 1% 10% 10% 10%; */
+    margin: 1% 10% 10% 10%;
 
 }
 
-.popular-section-title {
+.section-title {
     text-align: center;
     font-size: 28px;
 }
@@ -174,13 +172,18 @@ hr {
     justify-content: center;
     align-items: center;
     margin: 0% 5%;
+    width: 100%;
+
 }
 
 .product-collection {
+    width: 300px;
+    height: 476px;
     justify-content: center;
     align-items: center;
-    box-shadow: gray;
-    margin-left: 20px;
+    box-shadow: 10px 10px 40px gray;
+    margin: auto;
+    padding: 20px;
 }
 
 .product-collections-title {
@@ -193,7 +196,7 @@ hr {
     font-size: 24px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
-    margin: 0 0 0px;
+    margin: 15px 0 0 0;
 }
 
 .product-rate {
@@ -227,6 +230,43 @@ h6 {
     color: #E02C6D;
 
 
+}
+
+/* ------------------
+    Top Blogs Styles
+--------------- */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 177px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+.blog-author a {
+    text-decoration: none;
+    color: #E02C6D;
 }
 
 /* Footer Style */
