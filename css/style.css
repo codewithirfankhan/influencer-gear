@@ -51,6 +51,9 @@ nav a {
     margin-right: 15px;
 }
 
+.for-mobile {
+    display: none;
+}
 
 /* Influencer Journey Section Style */
 
@@ -87,9 +90,8 @@ p {
 .half-width img {
     width: 70%;
     margin-left: 25%;
-    transform: rotate(380deg, 5s);
-    transition: transform infinite;
-
+    transform: rotate(360deg);
+    transition: transform ease 3s;
 }
 
 .button {
@@ -155,10 +157,9 @@ hr {
 
 }
 
-.product-container {
-    margin: 1% 10% 10% 10%;
-
-}
+/* .product-collection {
+    margin: 10% 10% 10% 10%;
+} */
 
 .section-title {
     text-align: center;
@@ -171,7 +172,7 @@ hr {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0% 5%;
+    margin: 3% 5%;
     width: 100%;
 
 }
@@ -226,8 +227,10 @@ h6 {
 .float-right {
     margin-top: 50px;
     text-decoration: none;
+    text-align: right;
     float: right;
     color: #E02C6D;
+    padding-left: 20px;
 
 
 }
@@ -235,10 +238,19 @@ h6 {
 /* ------------------
     Top Blogs Styles
 --------------- */
+.top-blogs {
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
 .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
+
 }
 
 .blog {
@@ -247,8 +259,8 @@ h6 {
 }
 
 .blog .thumbnail img {
-    width: 177px;
-    height: 177px;
+    width: 200px;
+    height: 200px;
 }
 
 .blog-info {
@@ -308,4 +320,89 @@ footer {
     align-items: center;
     width: 17px;
     color: #fff;
+}
+
+/* Responsive for Tab Device */
+@media only screen and (max-width:810px) {
+
+    .influencer-journey-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .partner-company-section {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .product-collections {
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    .partner-company-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-collections,
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+
+
+    }
+}
+
+/* Responsive for Mobile Device */
+@media only screen and (max-width:688px) {
+    html: {
+        overflow: hidden !important;
+    }
+
+    .for-pc {
+        display: none;
+    }
+
+    .for-mobile {
+        display: block;
+
+    }
+
+    .container {
+        width: 90%;
+        margin: 20px;
+    }
+
+    .influencer-journey-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .partner-company-section {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .product-collections {
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .partner-company-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-collections,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+
+
+    }
 }
