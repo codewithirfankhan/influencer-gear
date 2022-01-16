@@ -1,7 +1,7 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+<style>@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+</style>
 /* Common Style or Utilies*/
 
 body {
@@ -12,11 +12,13 @@ body {
 
 }
 
-/* main {
+main {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-} */
+
+}
 
 
 
@@ -116,14 +118,29 @@ a .text-size {
 
 .partner-company-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.image {}
+hr {
+    background-image: linear-gradient(rgba(158, 147, 147, 0));
+    width: 100%;
+    margin-left: 60px;
+    ;
+}
+
+.image {
+    margin-left: 100px;
+}
+
+
 
 /* Product Collections Section Style */
+
 .product-container {
-    margin: 0% 10%;
+    margin: 1% 10% 10% 10%;
+    overflow: hidden;
 }
 
 .popular-section-title {
@@ -158,7 +175,7 @@ a .text-size {
     font-size: 24px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
-    margin: 10px;
+    margin: 0 0 0px;
 }
 
 .product-rate {
@@ -188,22 +205,34 @@ h6 {
     text-decoration: none;
     float: right;
     color: #E02C6D;
+
+
 }
 
 /* Footer Style */
+
 footer {
-    display: block;
-    background-color: #0A0826;
+    background-color: #0B0D17;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 5px;
-
 
 
 }
 
 .white-color {
     color: #ffffff;
+    font-style: italic;
     font-size: 36px;
     line-height: 0px;
+}
+
+
+
+footer p {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+
+
 }
